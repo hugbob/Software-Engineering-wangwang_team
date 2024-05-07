@@ -1,0 +1,23 @@
+.main-container {
+    place-items: center center;
+  }
+  
+  #sign-in-form {
+    max-width: 330px;
+  }
+  .backimg{
+    background-image: url(https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/4233492/1820/1213/m1/fpnw/wm1/dwnw2ridtczr0abkng6ovsikyhiivkbqnuhx8f5nau3vgz2a3zngpuzlsjatt6cc-.jpg?1522764558&s=ee7d097bf4023b13e6138c05d4723f17);
+  }
+  .bootstrap-logo {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .form-control:focus {
+    z-index: 5;
+  }
+  .imag{
+   height: 450px;
+   width: 650px;
+   place-items: center center
+  }
