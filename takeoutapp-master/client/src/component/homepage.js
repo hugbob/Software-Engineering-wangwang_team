@@ -26,6 +26,11 @@ import LocalPizzaIcon from '@mui/icons-material/LocalPizza';
 import LunchDiningIcon from '@mui/icons-material/LunchDining';
 import SetMealIcon from '@mui/icons-material/SetMeal';
 import IcecreamIcon from '@mui/icons-material/Icecream';
+import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
+import LocalShippingIcon from '@mui/icons-material/LocalShipping';
+import SellIcon from '@mui/icons-material/Sell';
+import DeliveryDiningIcon from '@mui/icons-material/DeliveryDining';
+
 const StyledFab = styled(Fab)({
   position: 'absolute',
   zIndex: 1,
@@ -42,29 +47,31 @@ const Cartoon=()=>{
         <Stack spacing={6}>
         <EmojiFoodBeverageIcon color="warning"/> 
         <FastfoodIcon color="disabled"/>
-        <DinnerDiningIcon color="warning"/>
+        <ShoppingBasketIcon color="warning"/>
         <KebabDiningIcon color="disabled"/>
-        <EggAltIcon color="warning"/>
-        <TapasIcon color="disabled"/>
+        <LocalShippingIcon color="warning"/>
+        <SellIcon color="disabled"/>
         <BakeryDiningIcon color="warning"/>
-        <LocalPizzaIcon color="disabled"/>
+        <DeliveryDiningIcon color="disabled"/>
         <IcecreamIcon color="warning"/>
         <LunchDiningIcon color="disabled"/>
         <SetMealIcon color="warning"/>
         </Stack>
         <Stack spacing={6}>
         <Box marginTop={-0.8}></Box>
-        <SetMealIcon color="disabled"/>
+        <DeliveryDiningIcon color="disabled"/>
         <EmojiFoodBeverageIcon color="warning"/> 
         <BakeryDiningIcon color="disabled"/>
-        <DinnerDiningIcon color="warning"/>
+        <ShoppingBasketIcon color="warning"/>
         <KebabDiningIcon color="disabled"/>
         <TapasIcon color="warning"/>
-        <LocalPizzaIcon color="disabled"/>
+        <SellIcon color="disabled"/>
         <LunchDiningIcon color="warning"/>
-        <EggAltIcon color="disabled"/>
+        <LocalShippingIcon color="disabled"/>
         <FastfoodIcon color="warning"/>
         <IcecreamIcon color="disabled"/>
+
+
         </Stack>
         </Stack>
         </Stack>

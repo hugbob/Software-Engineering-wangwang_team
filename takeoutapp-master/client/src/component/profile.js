@@ -13,6 +13,10 @@ import Button from '@mui/material/Button'
 import LocalPizzaIcon from '@mui/icons-material/LocalPizza';
 import KebabDiningIcon from '@mui/icons-material/KebabDining';
 import SetMealIcon from '@mui/icons-material/SetMeal';
+import StorefrontIcon from '@mui/icons-material/Storefront';
+import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
+import DeliveryDiningIcon from '@mui/icons-material/DeliveryDining';
+import PortraitIcon from '@mui/icons-material/Portrait';
 import "./signup.css"
 const  Profile= (props) => {
   const {id}=useParams()
@@ -44,7 +48,7 @@ const  Profile= (props) => {
                 <Stack>
                 <Grid container >
                 <Grid item display="flex" justifyContent={"center"} xs={12} >
-                <RamenDiningIcon color='warning' />
+                <StorefrontIcon color='warning' />
                 </Grid>
                 </Grid>
                 <Item>
@@ -54,7 +58,7 @@ const  Profile= (props) => {
                 <Stack>
                 <Grid container >
                 <Grid item display="flex" justifyContent={"center"} xs={12} >
-                <LocalPizzaIcon color='warning' />
+                <DeliveryDiningIcon color='warning' />
                 </Grid>
                 </Grid>
                 <Item>
@@ -71,7 +75,7 @@ const  Profile= (props) => {
               <Stack>
               <Grid container >
                 <Grid item display="flex" justifyContent={"center"} xs={12} >
-                <KebabDiningIcon color='warning' />
+                <PhoneAndroidIcon color='warning' />
                 </Grid>
                 </Grid>
                 <Item>
@@ -81,7 +85,7 @@ const  Profile= (props) => {
               <Stack>
               <Grid container >
                 <Grid item display="flex" justifyContent={"center"} xs={12} >
-                <SetMealIcon color='warning' />
+                <PortraitIcon color='warning' />
                 </Grid>
                 </Grid>
                 <Item>

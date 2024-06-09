@@ -45,8 +45,8 @@ const Orderdetail = (props) => {
               <Table size="small" aria-label="purchases">
                 <TableHead>
                   <TableRow>
-                    <TableCell>菜品名称</TableCell>
-                    <TableCell>餐厅名称</TableCell>
+                    <TableCell>商品名称</TableCell>
+                    <TableCell>商品类型</TableCell>
                     <TableCell align="right">单价</TableCell>
                     <TableCell align="right">数量</TableCell>
                     <TableCell align="right">总价</TableCell>

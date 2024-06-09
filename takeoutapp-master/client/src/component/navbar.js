@@ -19,6 +19,7 @@ import { Avatar, Button, ButtonGroup, Link } from '@mui/material';
 import ManageSearchIcon from '@mui/icons-material/ManageSearch';
 import LunchDiningIcon from '@mui/icons-material/LunchDining';
 import { textAlign } from '@mui/system';
+import StoreIcon from '@mui/icons-material/Store';
 import './navbar.css'
 import axios from 'axios';
 import { deepOrange } from '@mui/material/colors';
@@ -188,10 +189,10 @@ const PrimarySearchAppBar=(props)=> {
           
           <Search>
             <SearchIconWrapper>
-              <LunchDiningIcon/>
+              <StoreIcon/>
             </SearchIconWrapper>
             <StyledInputBase
-              placeholder="找一找你爱吃的美食"
+              placeholder="查询商品"
               inputProps={{ 'aria-label': 'search' }}
               onChange={(e)=>{props.Setsearchtext(e.target.value)}}
             />
@@ -203,9 +204,9 @@ const PrimarySearchAppBar=(props)=> {
           <Box className='toright'>
             <Link color="inherit" underline='none' href='http://localhost:3000/'>主页</Link> 
             <ButtonGroup variant='text' color='inherit' className='toright2'>
-              <Button onClick={()=>{props.Setrestaurant(1)}}>曦园餐厅</Button>
-              <Button onClick={()=>{props.Setrestaurant(2)}}>晨园餐厅</Button>
-              <Button onClick={()=>{props.Setrestaurant(3)}}>双创餐厅</Button>
+              <Button onClick={()=>{props.Setrestaurant(1)}}>零食饮品</Button>
+              <Button onClick={()=>{props.Setrestaurant(2)}}>日用百货</Button>
+              <Button onClick={()=>{props.Setrestaurant(3)}}>果蔬生鲜</Button>
             </ButtonGroup> 
           </Box>
           <Box sx={{ flexGrow: 1 }} />

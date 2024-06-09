@@ -64,8 +64,8 @@ export default function CustomImageList() {
 
 const itemData = [
   {
-    img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
-    title: 'Breakfast',
+    img: 'https://images.unsplash.com/photo-1568835679605-ba674a4d12e1?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    title: 'supermarket',
     author: '@bkristastucchio',
     featured: true,
   },

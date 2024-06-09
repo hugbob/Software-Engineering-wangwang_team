@@ -114,7 +114,7 @@ const CollapsibleTable=(props)=> {
             <TableCell>订单号</TableCell>
             <TableCell align="center">时间</TableCell>  
             <TableCell align="right">当前状态</TableCell>
-            <TableCell align="right">外卖员编号</TableCell>
+            <TableCell align="right">配送员编号</TableCell>
             <TableCell align="right">总价</TableCell>
           </TableRow>
         </TableHead>
