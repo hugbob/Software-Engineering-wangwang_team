@@ -3,11 +3,11 @@ const app = express();
 const mysql = require('mysql');
 const cors = require('cors');
 const db = mysql.createConnection({
-    host:"sh-cdb-7elysgui.sql.tencentcdb.com",
+    host:"localhost",
     user:"root",
-    password:"xnx021128",
+    password:"xnx3093764",
     database:"takeoutapp",
-    port:"63887"
+    port:"3306"
 })
 app.use(cors());
 app.use(express.json());
