@@ -18,19 +18,30 @@ import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 import DeliveryDiningIcon from '@mui/icons-material/DeliveryDining';
 import PortraitIcon from '@mui/icons-material/Portrait';
 import "./signup.css"
+const API_URL = 'https://api.unsplash.com/search/photos';
+const API_KEY = 'GEW9tKVMVa3qABk7XIscaYXmJEWpbaM80VEUJ-8FLNs';
 const  Profile= (props) => {
   const {id}=useParams()
   const [profile,Setprofile]=useState({})
+  const [resp,Setresp] = useState({})
   useEffect(()=>{
-    console.log(id)
+   // console.log(id)
     if(id!=="null"){
-    console.log(id)
+    //console.log(id)
     axios.get("http://localhost:3001/selectbyid",{params:{id:id}}).then((res)=>{
-      console.log(res)
+     // console.log(res)
       Setprofile(res.data[0])
     })
-  }},)
-  console.log(profile)
+     //console.log(resp)
+  }},[])
+  useEffect(()=>{
+    axios.get(`https://api.unsplash.com/photos/random/?client_id=${API_KEY}&query=${id%2===0? "dog":"cat"}`).then((res2)=>{
+
+      Setresp(res2.data.urls.raw)
+      console.log(resp)
+     })
+  },[id])
+  //console.log(profile)
   const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
     ...theme.typography.body2,
@@ -68,7 +79,7 @@ const  Profile= (props) => {
               </Stack>
             </Grid>
             <Grid item xs={4} display="flex" justifyContent={"center"}>
-              <Avatar  sx={{ width: 350, height: 350 }} src={`https://source.unsplash.com/random/?${id%2===0? "dog":"cat"}`} />
+              <Avatar  sx={{ width: 350, height: 350 }} src={resp} />
             </Grid> 
             <Grid item xs={4} marginTop={5}>
             <Stack spacing={25}>
